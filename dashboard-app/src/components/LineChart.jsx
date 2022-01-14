@@ -62,7 +62,7 @@ export default function LineChart() {
                ],
            };
 
-           const res = await fetch("https://twwai-dashboard-app.herokuapp.com/api/params")
+           const res = await fetch("https://dashboard-appa.herokuapp.com/api/params")
            const dataRes = await res.json();
 
            data.datasets[0].data = dataRes.map(item => {
